@@ -2,7 +2,9 @@ package com.pract.game;
 
 import  com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application;
 import com.badlogic.gdx.backends.lwjgl3.Lwjgl3ApplicationConfiguration;
-import com.pract.game.practice;
+import com.pract.game.Tank_stars;
+
+import java.awt.*;
 
 // Please note that on macOS your application needs to be started with the -XstartOnFirstThread JVM argument
 public class DesktopLauncher {
@@ -11,7 +13,7 @@ public class DesktopLauncher {
 		config.setForegroundFPS(60);
 		config.setTitle("Tank Stars");
 		config.useVsync(true);
-		config.setWindowedMode(1800,900);
-		new Lwjgl3Application(new practice(), config);
+		config.setWindowedMode(640,360);
+		new Lwjgl3Application(new Tank_stars(), config);
 	}
 }
